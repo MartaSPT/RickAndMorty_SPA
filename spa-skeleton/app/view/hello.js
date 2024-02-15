@@ -1,5 +1,6 @@
 export default function render(message1, arr) {
-    $('#title').empty().append($('<h1>').text(message1));
+    $('#container1').append($('<h1 id = "title">' + message1 + '</h1>'));
+    
     let card;
     for (let i = 0; i<arr.length; i++){
         let image = arr[i].image;

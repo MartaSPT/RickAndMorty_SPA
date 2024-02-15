@@ -1,29 +1,29 @@
 body{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-content: stretch;
 
 }
 #title {
-   /* background-image: url("resources/rickmorty_background.jpg");*/
     text-align: center;
     font-family: 'Get Schwifty';
-    position: absolute;
     width: 100%;
     text-align: center;
     font-family: 'Get Schwifty';
-    font-size: 50px;
+    font-size: 100px;
     color: #08BAE3;
     z-index: 50;
     -webkit-text-stroke: 1px rgba(0, 0, 0, 0.5);
-    border-style: solid;
     padding: 0;
+}
+#container1{
+    background-image: url("resources/rickmorty_background.jpg");
 
+    padding: 0;
 }
 #container{
     text-align: center;
     padding: 0;
-    border-style: solid;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -39,7 +39,6 @@ body{
 
 #nameChar{
     text-align: center; 
-
     background-color: #08BAE3;;
     font-family: 'Get Schwifty';
     color: white;
