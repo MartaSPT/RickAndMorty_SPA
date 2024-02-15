@@ -1,6 +1,8 @@
-export default function render(array, ID) {
-          
-       card = '<div>' +
+export default function render(arr, id) {
+         
+        $('#container').empty();
+
+      let card = '<div>' +
         '<p><strong>Name: </strong>' +
         arr[id].name +
         '</p>' +

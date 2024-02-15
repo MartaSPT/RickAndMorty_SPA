@@ -49,9 +49,11 @@ e dps outra função async and wait onde guardo a resposta
 */
 
 export function getCard() {
-    console.log(lol());
+    //console.log(lol());
     return lol();
 }
+
+
 
 
 
