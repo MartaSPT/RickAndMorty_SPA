@@ -29,28 +29,19 @@ async function lol() {
 }
 
 
-/*
-fazer uma função getJSON
-e dps outra função async and wait onde guardo a resposta
-
-
-   
-  let chara =  function async fetchChar () { 
-    fetch(url)
-    .then(response => {
-        //console.log(response)
-        return response.json()
-    })
-    .then((response) => {
-        console.log(response.results);
-        return response.results;
-    })
-}
-*/
-
 export function getCard() {
-    //console.log(lol());
     return lol();
+}
+
+export default async function getCharacter(id){
+    let arr = await getCard();
+    for(let i = 0; i < arr.length; i++){
+        if(id===arr[i].id){
+            return arr[i];
+        }
+
+    }
+
 }
 
 

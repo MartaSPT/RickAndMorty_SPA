@@ -1,25 +1,27 @@
-export default function render(arr, id) {
+export default function render(character) {
          
         $('#container').empty();
 
       let card = '<div>' +
         '<p><strong>Name: </strong>' +
-        arr[id].name +
+        character.name +
         '</p>' +
         '<p><strong>Gender: </strong>' +
-        arr[id].gender +
+        character.gender +
         '</p>' +
         '<p><strong>Specie: </strong>' +
-        arr[id].species +
+         character.species +
         '</p>' +
         '<p><strong>Location: </strong>' +
-        arr[id].location.name +
+        character.location.name +
         '</p>' +
         '<p><strong>Status: </strong>' +
-        arr[id].status +
+        character.status +
         '</p>' +
-        '</div>';        
+        '</div>';
+
+        let button = '<div><button id="back">Go Back</button></div>';
         
-        $('#container').append(card);
+        $('#container').append(card + button);
 
 }
