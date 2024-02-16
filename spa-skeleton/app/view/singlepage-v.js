@@ -21,7 +21,11 @@ export default function render(character) {
         '</div>';
 
         let button = '<div><button id="back">Go Back</button></div>';
-        
         $('#container').append(card + button);
 
+
+        document.getElementById("back").addEventListener("click", function displayHomePage (){
+                window.location.hash = '#hello';
+                $('#container').empty(); 
+        });
 }

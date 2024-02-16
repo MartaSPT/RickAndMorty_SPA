@@ -1,6 +1,6 @@
 
 export default function render(message1, arr) {
-    $('#container1').append($('<h1 id = "title">' + message1 + '</h1>'));
+    $('#container1').empty().append($('<h1 id = "title">' + message1 + '</h1>'));
     
     let card;
 
