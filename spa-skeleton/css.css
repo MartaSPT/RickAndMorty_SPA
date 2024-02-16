@@ -42,9 +42,11 @@ body{
     background-color: #08BAE3;;
     font-family: 'Get Schwifty';
     color: white;
-    padding: 0;
+    padding: 0; 
+}
 
- 
+#imgCard{
+    border-radius: 50%;
 }
 
 
